@@ -54,7 +54,13 @@ More frauds happened in cities: Arlington, Columbus
 <img width="562" alt="Screen Shot 2022-11-28 at 12 40 50 PM" src="https://user-images.githubusercontent.com/68578215/204376626-a1d50b36-f2da-4a0a-83eb-ce7e4fab2e56.png">
 
 - More fraud claims are made by the customers who insured in the years 1991,2002,2012
+
 <img width="546" alt="Screen Shot 2022-11-28 at 12 39 44 PM" src="https://user-images.githubusercontent.com/68578215/204376627-b296c7ef-b2d1-4875-a09f-0b304ab5dabb.png">
+
+- People who claimed incident type as Single vehicle collision or multiple vehicle and major damage collision are more fraudulent claims.
+
+
+<img width="578" alt="Screen Shot 2022-11-28 at 12 45 02 PM" src="https://user-images.githubusercontent.com/68578215/204377283-ede774da-d096-4b82-a30d-bf3e451edbc3.png">
 
 ## Pre-processing Pipeline
 
