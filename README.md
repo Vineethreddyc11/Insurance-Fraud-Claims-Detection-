@@ -24,15 +24,15 @@ The obvious con of this data set is the small sample size. However, there are st
 
 ## Exploratory data analysis
 
-- Dependent variable: Exploratory data analysis was conducted starting with the dependent variable, Fraud_reported. There were 247 frauds and 753 non-frauds. 24.7% of the data were frauds while 75.3% were non-fraudulent claims.
+- **Dependent variable:** Exploratory data analysis was conducted starting with the dependent variable, Fraud_reported. There were 247 frauds and 753 non-frauds. 24.7% of the data were frauds while 75.3% were non-fraudulent claims.
 
 
 <img width="513" alt="Screen Shot 2022-11-28 at 12 15 21 PM" src="https://user-images.githubusercontent.com/68578215/204372428-984d2100-7e39-4025-b35d-2a095a94e0a2.png">
 
 
-- Correlations among variables: Heatmap was plotted for variables with at least 0.3 Pearson’s correlation coefficient, including the DV. Month as customer and age had a correlation of 0.92. Probably because drivers buy auto insurance when they own a car and this time measure only increases with age. Apart from that, there don’t seem to be many correlations in the data. There don’t seem to be multicollinearity problems except maybe that all the claims are all correlated, and somehow total claims have accounted for them. However, the other claims provide some granularity that will not otherwise be captured by total claims. Thus, these variables were kept.
+- **Correlations among variables:** Heatmap was plotted for variables with at least 0.3 Pearson’s correlation coefficient, including the DV. Month as customer and age had a correlation of 0.92. Probably because drivers buy auto insurance when they own a car and this time measure only increases with age. Apart from that, there don’t seem to be many correlations in the data. There don’t seem to be multicollinearity problems except maybe that all the claims are all correlated, and somehow total claims have accounted for them. However, the other claims provide some granularity that will not otherwise be captured by total claims. Thus, these variables were kept.
 
- - Visualizing variables: The value of fraud reported differs across hobbies of the customer. It seems like chess players and crossfitters have higher tendencies to fraud.
+ - **Visualizing variables:** The value of fraud reported differs across hobbies of the customer. It seems like chess players and crossfitters have higher tendencies to fraud.
 
 <img width="752" alt="Screen Shot 2022-11-28 at 12 15 29 PM" src="https://user-images.githubusercontent.com/68578215/204372423-4db56fd7-f0c8-4c00-b8e7-faaec06d2c07.png">
 
