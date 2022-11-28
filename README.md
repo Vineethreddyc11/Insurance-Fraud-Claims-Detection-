@@ -49,4 +49,22 @@ The obvious con of this data set is the small sample size. However, there are st
 
 <img width="770" alt="Screen Shot 2022-11-28 at 12 15 52 PM" src="https://user-images.githubusercontent.com/68578215/204372411-108df6e6-4374-464a-b1af-f085fc0e71c7.png">
 
+## Pre-processing Pipeline
+
+Data preprocessing is a predominant step in machine learning to yield highly accurate and insightful results. Greater the quality of data, the greater is the reliability of the produced results. Incomplete, noisy, and inconsistent data are the inherent nature of real-world datasets. Data preprocessing helps in increasing the quality of data by filling in missing incomplete data, smoothing noise, and resolving inconsistencies.
+
+- **Incomplete data** can occur due to many reasons. Appropriate data may not be persisted due to a misunderstanding, or because of instrument defects and malfunctions.
+
+- **Noisy data** can occur for a number of reasons (having incorrect feature values). The instruments used for the data collection might be faulty. Data entry may contain human or instrument errors. Data transmission errors might occur as well.
+
+
+There are many stages involved in data preprocessing.
+
+- **Data cleaning** attempts to impute missing values, removing outliers from the dataset.
+
+- **Data integration** integrates data from a multitude of sources into a single data warehouse.
+
+- **Data transformation** such as normalization, may be applied. For example, normalization may improve the accuracy and efficiency of mining algorithms involving distance measurement.
+
+- **Data reduction** can reduce the data size by dropping out redundant features. Feature selection and feature extraction techniques can be used.
 
