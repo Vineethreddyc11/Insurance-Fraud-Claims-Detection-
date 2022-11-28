@@ -49,6 +49,13 @@ The obvious con of this data set is the small sample size. However, there are st
 
 <img width="770" alt="Screen Shot 2022-11-28 at 12 15 52 PM" src="https://user-images.githubusercontent.com/68578215/204372411-108df6e6-4374-464a-b1af-f085fc0e71c7.png">
 
+More frauds happened in cities: Arlington, Columbus
+
+<img width="562" alt="Screen Shot 2022-11-28 at 12 40 50 PM" src="https://user-images.githubusercontent.com/68578215/204376626-a1d50b36-f2da-4a0a-83eb-ce7e4fab2e56.png">
+
+- More fraud claims are made by the customers who insured in the years 1991,2002,2012
+<img width="546" alt="Screen Shot 2022-11-28 at 12 39 44 PM" src="https://user-images.githubusercontent.com/68578215/204376627-b296c7ef-b2d1-4875-a09f-0b304ab5dabb.png">
+
 ## Pre-processing Pipeline
 
 Data preprocessing is a predominant step in machine learning to yield highly accurate and insightful results. Greater the quality of data, the greater is the reliability of the produced results. Incomplete, noisy, and inconsistent data are the inherent nature of real-world datasets. Data preprocessing helps in increasing the quality of data by filling in missing incomplete data, smoothing noise, and resolving inconsistencies.
