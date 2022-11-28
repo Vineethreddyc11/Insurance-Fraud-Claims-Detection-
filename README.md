@@ -68,3 +68,72 @@ There are many stages involved in data preprocessing.
 
 - **Data reduction** can reduce the data size by dropping out redundant features. Feature selection and feature extraction techniques can be used.
 
+### Treating null values
+
+Sometimes there are certain columns which contain the null value used to indicate missing or unknown values or maybe the value doesn’t exist. In our dataset the null values are present in columns collision_type, property_damage, police_report_available, and _c39 with 178, 360, 343 and 1000 number of null values.
+
+There are different ways of replacing null values from the dataset, but wi usED fillna to replace the null values from data.
+
+### Converting labels into numeric
+
+
+In machine learning, we usually deal with datasets which contain multiple labels in one or more than one column. These labels can be in the form of words or numbers. To make the data understandable or in human readable form, the training data is often labelled in words.
+
+In our data there are columns with categorical values. The columns like incident_severity, incident_state, incident_type, insured_hobbies, authorities_contacted, incident_city, police_report_available, auto_make, collision_type, auto_model, insured_occupation, insured_education_level, property_damage, insured_relationship, policy_state, insured_sex, fraud_reported. These columns have to be treated with one hot encoding or the label encoder. The target variable fraud_reported has to convert by using label encoder only.
+
+**Label Encoder** refers to converting the labels into numeric form so as to convert it into the machine readable form. Machine learning algorithms can then decide in a better way on how those labels must be operated. It is an important preprocessing step for the structured dataset in supervised learning.
+
+Label encoding in python can be imported from the Sklearn library. Sklearn provides a very efficient tool for encoding. Label encoders encode labels with a value between 0 and n_classes-1.
+
+**Outliers** are data points that are distant from other similar points. They may be due to variability in the measurement or may indicate experimental errors. If possible, outliers should be excluded from the data set. However, detecting that anomalous instance might be very difficult, and is not always possible.
+
+Methods to remove outliers:
+
+- **Z-score** — Call scipy.stats.zscore() with the given data-frame as its argument to get a numpy array containing the z-score of each value in a dataframe. Call numpy.abs() with the previous result to convert each element in the dataframe to its absolute value. Use the syntax (array < 3).all(axis=1) with array as the previous result to create a boolean array.
+
+
+- **Interquartile range** — The interquartile range can be used to detect the outliers present in the dataframe.
+
+Calculate the interquartile range for the data by using scipy.stats.iqr module.
+
+Multiply the interquartile range by 1.5.
+
+Add 1.5 x interquartile range to the third quartile. Any number greater than this is a suspected outlier.
+
+Subtract 1.5 x interquartile range from the first quartile. Any number lesser than this is a suspected outlier.
+
+### Balancing imbalanced data
+
+There are different algorithms present to balance the target variable. I used SMOTE() algorithm to make our data balance.
+
+SMOTE algorithm works in 4 simple steps:
+
+1. Choose a minority class as input vector.
+
+2. Find its k-nearest neighbors.
+
+3. Choose one of these neighbors and place a synthetic point anywhere on the line joining the point under consideration and its chosen neighbors.
+
+4. Repeat the step until the data is balanced.
+
+## Building machine learning models
+For building machine learning models there are several models present inside the Sklearn module.
+
+Sklearn provides two types of models i.e. regression and classification. Our dataset’s target variable is to predict whether fraud is reported or not. So for this kind of problem we use classification models.
+
+But before fitting our dataset to its model first we have to separate the predictor variable and the target variable, then we pass this variable to the train_test_split method to create a random test and train subset.
+
+I have selected 12 models:
+
+- Support Vector Classifier
+- Knn
+- Decision Tree Classifier
+- Random Forest Classifier
+- Ada Boost Classifier
+- Gradient Boosting Classifier
+- Stochastic Gradient Boosting (SGB)
+- XgBoost
+- Cat Boost Classifier
+- Extra Trees Classifier
+- LGBM Classifier
+- Voting Classifier
